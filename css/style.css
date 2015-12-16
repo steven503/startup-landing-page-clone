@@ -4,12 +4,20 @@ html {
 
 body {
   background-color: LightGray;
+  font-family: 'Roberto', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+.content {
+  width: 970px;
+  height: 70px;
+  margin: 0 auto;
 }
 
 .top-navigation {
@@ -20,21 +28,16 @@ body {
   height: 70px;
 }
 
-.content {
-  width: 970px;
-  height: 70px;
-  margin: 0 auto;
+.top-navigation .content {
   padding: 0px 15px;
 }
 
 .top-navigation .links {
   float: right;
   margin-top: 25px;
-  font-family: 'Roberto', sans-serif;
   font-size: 16px;
   color: #838994;
   letter-spacing: 0.03em;
-  -webkit-font-smoothing: antialiased;
 }
 
 .top-navigation .links li {
@@ -56,3 +59,52 @@ a {
   text-decoration: none;
 }
 
+.introduction {
+  background-image: url('../img/first-background.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.938rem;
+  overflow: auto;
+}
+
+.introduction h1,
+.introduction h3 {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+}
+
+.introduction h1 {
+  margin-top: 17.5rem;
+  font-size: 3.125rem;
+}
+
+.introduction h3 {
+  margin-top: 1.25rem;
+  font-size: 1.563rem;
+}
+
+.introduction .buttons {
+  color: white;
+  text-align: center;
+  margin-top: 1.563rem;
+}
+
+.big-button {
+  width: 9.688rem;
+  background-color: #f15a29;
+  border-color: #f15a29;
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1.125rem;
+}
+
+.big-button:hover {
+  background-color: #d9400e;
+  border-color: #cf3d0e;
+  cursor: pointer;
+}
