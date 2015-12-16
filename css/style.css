@@ -58,8 +58,14 @@ body {
   color: #333;
 }
 
-a {
+a,
+a:visited {
   text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #999;
 }
 
 .introduction {
@@ -140,7 +146,47 @@ a {
 }
 
 .cases h3 {
-  font-weight: 400;
   font-size: 1.563rem;
+  font-weight: 400;
   margin: 2.5rem 0px 1.875rem;
+}
+
+.social {
+  background-color: #fff;
+  text-align: center;
+  overflow: auto;
+  padding-bottom: 9.375rem;
+}
+
+.social hr {
+  border: 0;
+  border-top: 1px solid #eaebec;
+  margin: 1.313rem 0;
+}
+
+.social h4 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.social ul {
+  margin: 0;
+  padding: 0;
+}
+
+.social .icons > li {
+  list-style: none;
+  display: inline-block;
+  border: 1px solid #eaebec;
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1.25rem 5px;
+  padding: 0.625rem 0;
+}
+
+.copy {
+  font-weight: 300;
+  font-size: 12px;
+  color: #666;
 }
